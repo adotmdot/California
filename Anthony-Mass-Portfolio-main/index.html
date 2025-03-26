@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Pizza Making App</title>
+      <style>
+         * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+         }
+
+         html {
+            scroll-behavior: smooth;
+         }
+
+         body {
+            font-family: Arial, sans-serif;
+            margin: auto;
+            background-color: #ffe6e6;
+         }
+
+         h1 {
+            text-align: center;
+            color: #d35400;
+         }
+         .container {
+            min-height: fit-content;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+         }
+
+         .banner {
+            position: relative;
+            bottom: 350px;
+            overflow: hidden;
+         }
+
+         .banner__container {
+            width: max-content;
+            display: flex;
+            align-items: center;
+            gap: 8rem;
+
+            animation: scroll 50s linear infinite;
+         }
+
+         .banner__container img {
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            transition: transform 0.3s ease-in-out;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+         }
+
+         @keyframes scroll {
+            to {
+               transform: translateX(calc(-50% - 4rem));
+            }
+         }
+         .section {
+            position: relative;
+            left: 900px;
+            bottom: 650px;
+            /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+         }
+
+         .section-1 {
+            position: relative;
+            bottom: 200px;
+            left: 300px;
+         }
+         .section h2 {
+            color: #555;
+         }
+         .form-group {
+            margin-bottom: 10px;
+         }
+         .form-group label {
+            display: block;
+            margin-bottom: 5px;
+         }
+         .form-group input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+         }
+         button {
+            padding: 8px 15px;
+            background-color: #e74c3c;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+         }
+         button:hover {
+            background-color: #c0392b;
+         }
+         ul {
+            list-style: none;
+            padding: 0;
+         }
+         ul li {
+            background: #f8f9fa;
+            margin: 5px 0;
+            padding: 8px;
+            border-radius: 3px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+         }
+         ul li button {
+            margin-left: 5px;
+            background-color: #e74c3c;
+         }
+         ul li button:hover {
+            background-color: #c0392b;
+         }
+
+         .desktop-hero-img {
+            position: relative;
+            left: 410px;
+            box-sizing: border-box;
+            margin: auto 0;
+            max-width: fit-content;
+         }
+
+         @media screen and (max-width: 1024px) {
+            .banner {
+               position: absolute;
+               bottom: 5%;
+               width: 100%;
+               z-index: 1;
+            }
+
+            .banner__container {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               gap: 2rem;
+               animation: scroll 50s linear infinite;
+               white-space: nowrap; /* Prevents wrapping of images */
+               padding: 1rem;
+            }
+
+            .banner__container img {
+               height: 100px;
+               width: 100px;
+               border-radius: 50%;
+               transition: transform 0.3s ease-in-out;
+               box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            }
+
+            .banner__container img:hover {
+               transform: scale(1.2);
+            }
+
+            @keyframes scroll {
+               to {
+                  transform: translateX(calc(-100% - 2rem));
+               }
+            }
+
+            .desktop-hero-img {
+               display: none;
+            }
+
+            .hero {
+               position: relative;
+               height: 50vh;
+               width: 100%;
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+               justify-content: center;
+               text-align: center;
+               color: #fff;
+               overflow: hidden;
+            }
+
+            .hero::before {
+               content: '';
+               position: absolute;
+               top: 0;
+               left: 0;
+               width: 100%;
+               height: 100%;
+               background: url('pizza_PNG7132.png') no-repeat center/cover;
+               z-index: -2;
+            }
+
+            .hero::after {
+               content: '';
+               position: absolute;
+               top: 0;
+               left: 0;
+               width: 100%;
+               height: 100%;
+               background: rgba(0, 0, 0, 0.6); /* Dark transparent overlay */
+               z-index: -1;
+            }
+
+            .hero h1 {
+               font-size: 3rem;
+               text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+               z-index: 1;
+               margin-bottom: 1rem;
+            }
+
+            .container {
+               display: flex;
+               flex-wrap: wrap;
+               gap: 1rem;
+               justify-content: center;
+               padding: 1rem;
+            }
+
+            .section-1 {
+               left: 0 !important;
+               bottom: 0;
+               flex: 1 1 300px;
+               padding: 1rem;
+               background: #fff;
+               box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+               border-radius: 8px;
+            }
+
+            .section {
+               left: 0 !important;
+               bottom: 0;
+               flex: 1 1 300px;
+               padding: 1rem;
+               background: #fff;
+               box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+               border-radius: 8px;
+            }
+         }
+      </style>
+   </head>
+   <body>
+      <div class="hero">
+         <h1>Pizza Making App</h1>
+         <img class="desktop-hero-img" src="pizza_PNG7132.png" alt="" />
+
+         <section class="banner">
+            <div class="banner__container">
+               <img src="./bacon.jpg" alt="banner" />
+               <img src="./chicken.jpg" alt="banner" />
+               <img src="./mushrooms.jpg" alt="banner" />
+               <img src="./olives.jpg" alt="banner" />
+               <img src="./onion.jpg" alt="banner" />
+               <img src="./parmesan.jpg" alt="banner" />
+               <img src="./pepperoni.jpg" alt="banner" />
+               <img src="./peppers.jpg" alt="banner" />
+               <img src="./tomatoes.jpg" alt="banner" />
+            </div>
+         </section>
+      </div>
+
+      <div class="container">
+         <div class="section-1">
+            <h2>Toppings</h2>
+            <div class="form-group">
+               <label for="topping-input">Topping:</label>
+               <input type="text" id="topping-input" placeholder="Enter topping" />
+            </div>
+            <button id="add-topping">Add/Update Topping</button>
+            <ul id="topping-list"></ul>
+         </div>
+         <div class="section">
+            <h2>Pizzas</h2>
+            <div class="form-group">
+               <label for="pizza-name">Pizza Name:</label>
+               <input type="text" id="pizza-name" placeholder="Enter pizza name" />
+            </div>
+            <div class="form-group">
+               <label for="pizza-toppings">Toppings (comma separated):</label>
+               <input type="text" id="pizza-toppings" placeholder="Enter toppings" />
+            </div>
+            <button id="add-pizza">Add/Update Pizza</button>
+            <ul id="pizza-list"></ul>
+         </div>
+      </div>
+
+      <script>
+         const toppings = new Set();
+         const pizzas = new Map();
+
+         const toppingInput = document.getElementById('topping-input');
+         const addToppingButton = document.getElementById('add-topping');
+         const toppingList = document.getElementById('topping-list');
+
+         const pizzaNameInput = document.getElementById('pizza-name');
+         const pizzaToppingsInput = document.getElementById('pizza-toppings');
+         const addPizzaButton = document.getElementById('add-pizza');
+         const pizzaList = document.getElementById('pizza-list');
+
+         function renderToppings() {
+            toppingList.innerHTML = '';
+            toppings.forEach((topping) => {
+               const li = document.createElement('li');
+               li.textContent = topping;
+               const deleteButton = document.createElement('button');
+               deleteButton.textContent = 'Delete';
+               deleteButton.onclick = () => {
+                  toppings.delete(topping);
+                  renderToppings();
+               };
+               li.appendChild(deleteButton);
+               toppingList.appendChild(li);
+            });
+         }
+
+         function renderPizzas() {
+            pizzaList.innerHTML = '';
+            pizzas.forEach((pizzaToppings, pizzaName) => {
+               const li = document.createElement('li');
+               li.textContent = `${pizzaName}: ${pizzaToppings.join(', ')}`;
+               const deleteButton = document.createElement('button');
+               deleteButton.textContent = 'Delete';
+               deleteButton.onclick = () => {
+                  pizzas.delete(pizzaName);
+                  renderPizzas();
+               };
+               li.appendChild(deleteButton);
+               pizzaList.appendChild(li);
+            });
+         }
+
+         addToppingButton.onclick = () => {
+            const newTopping = toppingInput.value.trim();
+            if (newTopping && !toppings.has(newTopping)) {
+               toppings.add(newTopping);
+               toppingInput.value = '';
+               renderToppings();
+            } else if (toppings.has(newTopping)) {
+               alert('Topping already exists!');
+            } else {
+               alert('Invalid topping!');
+            }
+         };
+
+         addPizzaButton.onclick = () => {
+            const pizzaName = pizzaNameInput.value.trim();
+            const pizzaToppings = pizzaToppingsInput.value
+               .split(',')
+               .map((t) => t.trim())
+               .filter((t) => t);
+
+            if (!pizzaName || pizzas.has(pizzaName)) {
+               alert('Invalid or duplicate pizza name!');
+               return;
+            }
+
+            if (!pizzaToppings.every((t) => toppings.has(t))) {
+               alert('One or more toppings are invalid!');
+               return;
+            }
+
+            pizzas.set(pizzaName, pizzaToppings);
+            pizzaNameInput.value = '';
+            pizzaToppingsInput.value = '';
+            renderPizzas();
+         };
+
+         renderToppings();
+         renderPizzas();
+      </script>
+   </body>
+</html>
