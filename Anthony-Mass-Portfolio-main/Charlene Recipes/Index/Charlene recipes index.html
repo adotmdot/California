@@ -26,10 +26,12 @@
         <div class="hero-section"></div>
         <h2>Welcome to my delicious and healthy recipes</h2>
         <p>Search mouth watering recipes to satisfy your cravings</p>
-        <form action="#" class="search-box">
-            <input type="text" placeholder="Search Recipe">
-            <button type="submit">Search</button>
-        </form>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search recipes...">
+            <button onclick="handleSearch()">Search</button>
+          </div>
+          
+          <div id="searchResult" class="search-result"></div>
     </section>
     <!----...........* RECIPE SECTION */............--->
    <div class="container">
@@ -72,6 +74,19 @@
             <p>&copy; 2024 Charlene Delicious Keto Recipes</p>    
         </div>
     </footer>
+
+    <script>
+        function handleSearch() {
+            const input = document.getElementById('searchInput').value.trim();
+            const resultBox = document.getElementById('searchResult');
+        
+            if (input) {
+                resultBox.innerText = `You searched for: "${input}"`;
+            } else {
+                resultBox.innerText = '';
+            }
+        }
+        </script>
 
 </body>
 </html>

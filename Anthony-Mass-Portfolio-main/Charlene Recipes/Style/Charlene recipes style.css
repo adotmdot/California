@@ -95,7 +95,6 @@ nav ul li {
     color: pink;
     cursor: pointer;
 }
-
 /* ...........RECIPE SECTION.......... */
 
 .container {
@@ -158,6 +157,18 @@ footer {
     }
     
 }
+
+.search-result {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 20px auto;
+    color: black;
+    font-weight: 600;
+}
+    
+
+
+
 
 
 
