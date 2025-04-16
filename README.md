@@ -1,7 +1,7 @@
 <h1 align="center">🚀 Anthony Massaquoi's Software Engineering Portfolio</h1>
 
 <p align="center">
-  <a href="https://adotmdot.github.io/Anthony-Mass-Portfolio/My%20SE%20Portfolio.html" target="_blank">
+  <a href="https://adotmdot.github.io/Anthony-Mass-Portfolio-main/My_SE_Portfolio.html" target="_blank">
     🔗 My Live Portfolio
   </a>
 </p>
@@ -21,6 +21,10 @@ Welcome to my official portfolio website! This project highlights my experience,
 <ul>
   <li><strong>HTML5</strong></li>
   <li><strong>CSS3</strong></li>
+  <li><strong>JavaScript</strong></li>
+   <li><strong>Python</strong></li>
+   <li><strong>SQL</strong></li>
+   <li><strong>PHP</strong></li>
   <li><strong>Responsive Design</strong></li>
 </ul>
 
