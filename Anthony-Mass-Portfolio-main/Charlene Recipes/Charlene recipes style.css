@@ -36,15 +36,28 @@ header {
 
 nav ul li {
     list-style: none;
-    display: inline;
-    margin-right: 20px;
-    font-weight: 550;
+    display: inline-block;
+    margin-right: 15px;
 }
 
-
-nav ul li:hover {
-    transform: scale(1.1);
+nav ul li a {
+    text-decoration: none;
+    color: lavenderblush;
+    background-color: purple;
+    padding: 10px 16px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+nav ul li a:hover {
+    background-color: #6a0dad;
+    transform: scale(1.05);
+    color: pink;
+}
+
 
 .logo {
     font-size: 28px;
@@ -244,4 +257,19 @@ footer {
     flex: 1 1 100%; /* 1 per row on mobile */
   }
 }
+
+/* Mobile toggle nav */
+.nav-list.show-nav {
+    display: block;
+    background: purple;
+    padding: 10px 0;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.nav-list.show-nav li {
+    display: block;
+    margin: 10px 0;
+}
+
 
