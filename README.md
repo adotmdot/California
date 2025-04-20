@@ -1,7 +1,7 @@
 <h1 align="center">🚀 Anthony Massaquoi's Software Engineering Portfolio</h1>
 
 <p align="center">
-  <a href="https://adotmdot.github.io/Anthony-Mass-Portfolio-main/My_SE_Portfolio.html" target="_blank">
+  <a href="" target="_blank">
     🔗 My Live Portfolio
   </a>
 </p>
