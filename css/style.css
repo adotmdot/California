@@ -2,7 +2,7 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
-/* Reset default styles */
+
 body,
 ul {
   margin: 0;
@@ -58,14 +58,14 @@ ul.topnav li.right {
   }
 }
 
-/* Hover effect */
+
 .nav-links a:hover {
   background-color: #f4a261;
   color: #333;
 }
 
 
-/* Section styling */
+
 section {
   
   display: flex;
@@ -73,10 +73,10 @@ section {
   align-items: center;
   font-size: 2rem;
   font-weight: bold;
-  padding: 30px; /* Prevents content from hiding under the fixed header */
+  padding: 30px; 
 }
 
-/* Different colors for sections */
+
 #home {
   background-color: #f1c40f;
 }
@@ -96,8 +96,8 @@ section {
 /* Responsive Design */
 @media (max-width: 768px) {
   .nav-links li {
-    float: none; /* Remove float */
-    width: 100%; /* Full width */
+    float: none; 
+    width: 100%; 
   }
 }
 .contain {
@@ -143,12 +143,12 @@ hr {
   background-color: #fff;
 }
 
-/* Container for layout */
+
 .container {
   width: 80%;
 }
 
-/* Image styling */
+
 .image-container {
   float: left;
   width: 45%;
@@ -177,7 +177,7 @@ hr {
   height: auto;
   margin-top: 40px;
 }
-/* Text content styling */
+
 .text-container {
   float: right;
   width: 50%;
@@ -210,7 +210,7 @@ hr {
   color: #333;
   text-align: justify;
 }
-/* Clearfix to prevent float overlap */
+
 #clear {
   clear: both;
 }
@@ -293,11 +293,11 @@ button:hover {
   background: #0056b3;
 }
 footer {
-  background-color: #333; /* Dark background */
-  color: white; /* White text */
-  text-align: center; /* Center text */
+  background-color: #333; 
+  color: white;
+  text-align: center; 
   padding: 15px;
-  position: relative; /* Keeps footer at the bottom of content */
+  position: relative; 
   width: 100%;
   font-size: 16px;
   margin-top: 5%;
