@@ -5,7 +5,7 @@ function validateEmail() {
 
     if (email !== confirmEmail) {
         alert("Email addresses do not match. Please check again.");
-        return false; // Prevent form submission
+        return false; 
     }
-    return true; // Allow form submission
+    return true; 
 }
