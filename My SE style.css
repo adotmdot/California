@@ -1,4 +1,4 @@
-/* General */
+
 
 * {
     margin: 0;
@@ -34,13 +34,13 @@ img {
     border-radius: 25%;
 }
 
-/* Transition*/
+
 
 a, .btn {
     transition:all 300ms ease
 }
 
-/* Desktop Nav */
+
 
 nav, 
 .nav-links {
@@ -76,7 +76,7 @@ a:hover {
     font-size: 2rem;
 }
 
-/* Hamburger Menu */
+
 
 #hamburger-nav {
     display: none;
@@ -152,7 +152,7 @@ a:hover {
     transform: none;
 }
 
-/* Sections*/
+
 
 section {
     padding-top: 4vh;
@@ -166,7 +166,7 @@ section {
     display: flex;
 }
 
-/* Profile Section */
+
 
 #profile {
     display: flex;
@@ -215,14 +215,14 @@ section {
     gap: 1rem;
 }
 
-/* Icons */
+
 
 .icon {
     cursor: pointer;
     height: 2rem;
 }
 
-/* Buttons */
+
 
 .btn-container {
     display: flex;
@@ -270,7 +270,7 @@ section {
     gap: 1rem;
 }
 
-/* About Section */
+
 
 #about {
     position: relative;
@@ -354,7 +354,7 @@ article .icon {
     cursor: default;
 }
 
-/* Projects Section */
+
 
 #projects {
     position: relative;
@@ -381,7 +381,7 @@ article .icon {
     border-color: orange;
 }
 
-/* Contact */
+
 
 #contact {
     display: flex;
@@ -421,7 +421,7 @@ article .icon {
     height: 2.5rem;
 }
 
-/* Footer */
+
 
 footer {
     height: 26vh;
