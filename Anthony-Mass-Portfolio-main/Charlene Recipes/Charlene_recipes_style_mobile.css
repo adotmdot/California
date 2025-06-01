@@ -1,5 +1,4 @@
 
-/* FINAL FIX: Override ALL base gallery styles on mobile for recipes-page */
 @media (max-width: 800px) {
   body.recipes-page .container {
     display: flex !important;

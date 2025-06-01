@@ -1,5 +1,4 @@
 
-/* Fully scoped fix for recipes-page to ensure mobile layout matches Home */
 
 @media (max-width: 800px) {
   body.recipes-page .container {
