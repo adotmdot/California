@@ -5,7 +5,7 @@ This is a responsive and visually-rich informational website highlighting key fa
 ## 🚀 Live Website
 
 📍 Visit the project live here: [https://your-username.github.io/California](https://your-username.github.io/California)  
-(Replace `your-username` with your actual GitHub username)
+
 
 ---
 
