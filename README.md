@@ -4,7 +4,7 @@ This is a responsive and visually-rich informational website highlighting key fa
 
 ## 🚀 Live Website
 
-📍 Visit the project live here: [https://your-username.github.io/California](https://your-username.github.io/California)  
+📍 Visit the project live here: [https://adotmdot.github.io/California](https://adotmdot.github.io/California/main/index.html)  
 
 
 ---
